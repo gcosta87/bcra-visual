@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic-UI base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/semantic-ui/semantic.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main>
+    <div class="ui bottom attached segment">
+        <div class="ui vertical menu sidebar inverted">
+            <div class="item">
+                <div class="header">Tasas</div>
+                <div class="menu">
+                    <a class="item">PF < 1M</a>
+                    <a class="item">BADLAR</a>
+                    <a class="item">20M</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Cotizaciones</div>
+                <div class="menu">
+                    <a class="item">UVA</a>
+                    <a class="item">CER</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Comparaciones</div>
+                <div class="menu">
+                    <a class="item">UVA vs Dolar</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Info util</div>
+                <div class="menu">
+                    <a class="item">Datos</a>
+                    <a class="item">Acerca de</a>
+                    <a class="item">Contacto</a>
+                </div>
+            </div>
+        </div>
+        <div class="pusher">
+            <div class="ui menu tiny inverted">
+                <a class="header item">
+                    <i class="sidebar icon left aligned" ></i>
+                    BCRA Visual
+                </a>
+                <div class="right menu">
+                    <a class="item" href="#">actualización dd/mm/aa</a>
+                </div>
+            </div>
+
+            <!-- MAIN -->
+            <div class="ui basic segment">
+                <h2 class="ui header">Nombre de la seccion</h2>
+
+                <div class="ui grid">
+                    <div class="left floated left aligned six wide column">
+                        <p>Holaaa</p>
+                        <!-- <div class="ui segment">contexto </div> -->
+                    </div>
+                    <div class="right floated right aligned six wide column">
+                        <div class="ui segment">
+                            <h4 class="ui header">Rendimiento</h4>
+                        </div>
+                    </div>
+                    <div class="sixteen wide column" id="bcra-visual"></div>
+                </div>
+
+            </div>
+            <!-- FIN MAIN -->
+
+        </div>
+    </div>
+</main>
+<footer>
+    <img class="logo" src="assets/images/flag_footer.svg" alt="hecho en Argentina" title="Hecho en Argentina">
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="assets/semantic-ui/semantic.min.js"></script>
+<script type="text/javascript">
+    $('.ui.sidebar').sidebar({
+        context: $('.bottom.segment')
+      })
+      .sidebar('attach events', '.menu .item');
+</script>
+
+<script src="assets/higthcharts-stock/code/highstock.js"></script>
+<script src="assets/higthcharts-stock/code/modules/data.js"></script>
+<script src="assets/higthcharts-stock/code/modules/exporting.js"></script>
+<script src="assets/higthcharts-stock/code/modules/export-data.js"></script>
+<script src="scripts/bcra-visual.js" type="text/javascript"></script>
+</body>
+</html>

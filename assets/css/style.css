@@ -1,0 +1,27 @@
+html{
+	box-shadow: inset 0 0 8rem rgba(0, 0, 0, .5); /* alternariva clara inset 0 0 8rem rgba(200, 200, 205, .5) */
+	background-color: #303030;	/* alternariva clara #F0F0F5 */
+	height: auto;
+	font-family: 'Lato', sans-serif;
+}
+main{
+	min-height: 94vh;
+}
+
+footer{
+    height: 5vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 1em;
+    opacity: 0.6;
+    transition: width 1s, opacity 2s;
+}
+
+footer img:hover{
+    width: 1.8em;
+    opacity: 1;
+}
